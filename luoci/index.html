@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>裸辞的7条理由 - 理性评估离职动机与决策指南</title>
+<meta name="description" content="裸辞的7条理由：系统梳理常见离职动机，帮助你判断哪些理由值得裸辞、哪些只是情绪冲动，并提供风险评估、准备清单与常见问题解答。">
+<meta name="keywords" content="裸辞的7条理由,裸辞理由,裸辞风险,离职决策,裸辞准备,职业规划">
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+<style>
+:root{
+  --ink:#1c2331;
+  --ink-soft:#4a5568;
+  --line:#e2e6ee;
+  --bg:#f6f7fb;
+  --card:#ffffff;
+  --accent:#2f6fed;
+  --accent-soft:#eaf1ff;
+  --warn:#c2410c;
+  --warn-soft:#fff3ea;
+  --ok:#0f766e;
+  --ok-soft:#e6f5f3;
+  --radius:14px;
+  --shadow:0 6px 24px rgba(28,35,49,.07);
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Helvetica Neue",Arial,sans-serif;
+  background:var(--bg);
+  color:var(--ink);
+  line-height:1.75;
+  font-size:16px;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:inherit;text-decoration:none;}
+img{max-width:100%;display:block;}
+
+/* ---------- 顶部 ---------- */
+.site-header{
+  background:#fff;
+  border-bottom:1px solid var(--line);
+  position:sticky;
+  top:0;
+  z-index:50;
+}
+.header-inner{
+  max-width:1140px;
+  margin:0 auto;
+  padding:0 20px;
+  height:64px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:16px;
+}
+.brand{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  font-weight:700;
+  font-size:18px;
+  letter-spacing:.5px;
+  white-space:nowrap;
+}
+.brand-mark{
+  width:32px;height:32px;border-radius:9px;
+  background:linear-gradient(135deg,#2f6fed,#5b9bff);
+  color:#fff;font-size:15px;font-weight:700;
+  display:flex;align-items:center;justify-content:center;
+  flex:none;
+}
+.nav{
+  display:flex;
+  gap:4px;
+  flex-wrap:wrap;
+}
+.nav a{
+  padding:7px 13px;
+  border-radius:8px;
+  font-size:14.5px;
+  color:var(--ink-soft);
+  transition:.2s;
+}
+.nav a:hover{background:var(--accent-soft);color:var(--accent);}
+
+/* ---------- 首屏 ---------- */
+.hero{
+  background:linear-gradient(160deg,#eef3ff 0%,#f7f9ff 55%,#f6f7fb 100%);
+  border-bottom:1px solid var(--line);
+}
+.hero-inner{
+  max-width:1140px;
+  margin:0 auto;
+  padding:56px 20px 48px;
+  display:grid;
+  grid-template-columns:1.35fr .95fr;
+  gap:44px;
+  align-items:center;
+}
+.hero-tag{
+  display:inline-block;
+  background:#fff;
+  border:1px solid #d8e3ff;
+  color:var(--accent);
+  font-size:13px;
+  padding:4px 12px;
+  border-radius:999px;
+  margin-bottom:18px;
+}
+h1{
+  font-size:38px;
+  line-height:1.3;
+  letter-spacing:-.5px;
+  margin-bottom:18px;
+}
+h1 em{
+  font-style:normal;
+  color:var(--accent);
+}
+.hero-lead{
+  font-size:16.5px;
+  color:var(--ink-soft);
+  max-width:600px;
+  margin-bottom:26px;
+}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;}
+.btn{
+  display:inline-block;
+  padding:11px 22px;
+  border-radius:10px;
+  font-size:15px;
+  font-weight:600;
+  transition:.2s;
+  border:1px solid transparent;
+  cursor:pointer;
+}
+.btn-primary{background:var(--accent);color:#fff;}
+.btn-primary:hover{background:#1f5ad4;}
+.btn-ghost{background:#fff;border-color:var(--line);color:var(--ink);}
+.btn-ghost:hover{border-color:var(--accent);color:var(--accent);}
+
+.hero-side{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
+  padding:24px 24px 20px;
+}
+.hero-side h2{
+  font-size:16px;
+  margin-bottom:14px;
+  letter-spacing:.3px;
+}
+.quick-list{list-style:none;}
+.quick-list li{
+  display:flex;
+  gap:10px;
+  font-size:14.5px;
+  color:var(--ink-soft);
+  padding:9px 0;
+  border-bottom:1px dashed var(--line);
+}
+.quick-list li:last-child{border-bottom:none;}
+.quick-list .num{
+  flex:none;
+  width:22px;height:22px;
+  border-radius:6px;
+  background:var(--accent-soft);
+  color:var(--accent);
+  font-size:12.5px;
+  font-weight:700;
+  display:flex;align-items:center;justify-content:center;
+  margin-top:3px;
+}
+
+/* ---------- 通用区块 ---------- */
+.section{
+  max-width:1140px;
+  margin:0 auto;
+  padding:56px 20px 8px;
+}
+.section-head{
+  margin-bottom:28px;
+}
+.section-head h2{
+  font-size:26px;
+  letter-spacing:-.3px;
+  margin-bottom:10px;
+}
+.section-head p{
+  color:var(--ink-soft);
+  font-size:15.5px;
+  max-width:760px;
+}
+.eyebrow{
+  font-size:13px;
+  font-weight:700;
+  color:var(--accent);
+  letter-spacing:1.5px;
+  text-transform:uppercase;
+  margin-bottom:8px;
+}
+
+/* ---------- 理由卡片 ---------- */
+.reason-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:20px;
+}
+.reason-card{
+  background:var(--card);
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  padding:24px 24px 22px;
+  box-shadow:var(--shadow);
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+  transition:.22s;
+}
+.reason-card:hover{transform:translateY(-3px);border-color:#cfdcff;}
+.reason-top{
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+.reason-index{
+  flex:none;
+  width:38px;height:38px;
+  border-radius:11px;
+  background:var(--accent-soft);
+  color:var(--accent);
+  font-weight:700;
+  font-size:17px;
+  display:flex;align-items:center;justify-content:center;
+}
+.reason-card h3{
+  font-size:18px;
+  letter-spacing:-.2px;
+}
+.reason-card p{
+  font-size:14.8px;
+  color:var(--ink-soft);
+}
+.reason-meta{
+  margin-top:auto;
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  padding-top:6px;
+}
+.chip{
+  font-size:12.5px;
+  padding:3px 10px;
+  border-radius:999px;
+  background:#f1f3f9;
+  color:var(--ink-soft);
+}
+.chip.good{background:var(--ok-soft);color:var(--ok);}
+.chip.risk{background:var(--warn-soft);color:var(--warn);}
+
+/* ---------- 判断标准 ---------- */
+.judge{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  padding:30px;
+  box-shadow:var(--shadow);
+}
+.judge-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:22px;
+  margin-top:6px;
+}
+.judge-item h3{
+  font-size:16px;
+  margin-bottom:8px;
+  display:flex;
+  align-items:center;
+  gap:8px;
+}
+.dot{
+  width:9px;height:9px;border-radius:50%;
+  flex:none;
+}
+.dot-green{background:var(--ok);}
+.dot-amber{background:#d97706;}
+.dot-red{background:#dc2626;}
+.judge-item p{font-size:14.6px;color:var(--ink-soft);}
+.judge-item ul{
+  margin-top:8px;
+  padding-left:18px;
+  font-size:14.4px;
+  color:var(--ink-soft);
+}
+.judge-item li{margin-bottom:5px;}
+
+/* ---------- 准备清单 ---------- */
+.prep{
+  display:grid;
+  grid-template-columns:1.1fr .9fr;
+  gap:22px;
+}
+.prep-main, .prep-side{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  padding:28px;
+  box-shadow:var(--shadow);
+}
+.step-list{list-style:none;counter-reset:step;}
+.step-list li{
+  position:relative;
+  padding:0 0 20px 46px;
+  counter-increment:step;
+}
+.step-list li::before{
+  content:counter(step);
+  position:absolute;
+  left:0;top:2px;
+  width:30px;height:30px;
+  border-radius:9px;
+  background:var(--accent);
+  color:#fff;
+  font-size:14px;
+  font-weight:700;
+  display:flex;align-items:center;justify-content:center;
+}
+.step-list li::after{
+  content:"";
+  position:absolute;
+  left:14px;top:36px;bottom:4px;
+  width:2px;
+  background:var(--line);
+}
+.step-list li:last-child{padding-bottom:0;}
+.step-list li:last-child::after{display:none;}
+.step-list h3{font-size:16px;margin-bottom:5px;}
+.step-list p{font-size:14.5px;color:var(--ink-soft);}
+
+.prep-side h3{
+  font-size:16px;
+  margin-bottom:14px;
+}
+.check-list{list-style:none;}
+.check-list li{
+  font-size:14.5px;
+  color:var(--ink-soft);
+  padding:9px 0 9px 26px;
+  position:relative;
+  border-bottom:1px dashed var(--line);
+}
+.check-list li:last-child{border-bottom:none;}
+.check-list li::before{
+  content:"✓";
+  position:absolute;
+  left:0;top:9px;
+  color:var(--accent);
+  font-weight:700;
+  font-size:13px;
+}
+.note-box{
+  margin-top:18px;
+  background:var(--warn-soft);
+  border-left:3px solid var(--warn);
+  border-radius:8px;
+  padding:14px 16px;
+  font-size:14px;
+  color:#7c3a10;
+}
+
+/* ---------- 风险对照表 ---------- */
+.table-wrap{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
+  overflow:hidden;
+}
+table{
+  width:100%;
+  border-collapse:collapse;
+  font-size:14.6px;
+}
+thead th{
+  background:#f4f6fc;
+  text-align:left;
+  padding:14px 18px;
+  font-size:14px;
+  color:var(--ink);
+  font-weight:700;
+  border-bottom:1px solid var(--line);
+  white-space:nowrap;
+}
+tbody td{
+  padding:14px 18px;
+  border-bottom:1px solid var(--line);
+  color:var(--ink-soft);
+  vertical-align:top;
+}
+tbody tr:last-child td{border-bottom:none;}
+tbody tr:hover{background:#fafbff;}
+td strong{color:var(--ink);font-weight:600;}
+
+/* ---------- FAQ ---------- */
+.faq{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:18px;
+}
+.faq-item{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  padding:22px 24px;
+  box-shadow:var(--shadow);
+}
+.faq-item h3{
+  font-size:16px;
+  margin-bottom:9px;
+  color:var(--ink);
+}
+.faq-item h3::before{
+  content:"Q";
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  width:22px;height:22px;
+  border-radius:6px;
+  background:var(--accent-soft);
+  color:var(--accent);
+  font-size:12.5px;
+  font-weight:700;
+  margin-right:8px;
+  vertical-align:1px;
+}
+.faq-item p{font-size:14.6px;color:var(--ink-soft);}
+
+/* ---------- 相关阅读 ---------- */
+.reads{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+}
+.read-card{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  padding:22px;
+  box-shadow:var(--shadow);
+  transition:.22s;
+}
+.read-card:hover{border-color:#cfdcff;transform:translateY(-3px);}
+.read-card .k{
+  font-size:12.5px;
+  color:var(--accent);
+  font-weight:700;
+  letter-spacing:1px;
+  margin-bottom:8px;
+}
+.read-card h3{font-size:16.5px;margin-bottom:8px;}
+.read-card p{font-size:14.4px;color:var(--ink-soft);}
+
+/* ---------- 页脚 ---------- */
+.site-footer{
+  margin-top:64px;
+  background:#fff;
+  border-top:1px solid var(--line);
+}
+.footer-inner{
+  max-width:1140px;
+  margin:0 auto;
+  padding:40px 20px 28px;
+  display:grid;
+  grid-template-columns:1.4fr 1fr 1fr;
+  gap:32px;
+}
+.footer-brand{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  font-weight:700;
+  margin-bottom:12px;
+}
+.footer-inner p{
+  font-size:14px;
+  color:var(--ink-soft);
+  max-width:380px;
+}
+.footer-col h4{
+  font-size:15px;
+  margin-bottom:12px;
+}
+.footer-col ul{list-style:none;}
+.footer-col li{
+  font-size:14px;
+  color:var(--ink-soft);
+  margin-bottom:8px;
+}
+.footer-col a:hover{color:var(--accent);}
+.footer-bottom{
+  border-top:1px solid var(--line);
+  text-align:center;
+  padding:16px 20px;
+  font-size:13.5px;
+  color:#8b93a7;
+}
+
+/* ---------- 响应式 ---------- */
+@media (max-width:960px){
+  .hero-inner{grid-template-columns:1fr;gap:32px;padding:40px 20px 36px;}
+  .reason-grid{grid-template-columns:1fr;}
+  .judge-grid{grid-template-columns:1fr;}
+  .prep{grid-template-columns:1fr;}
+  .faq{grid-template-columns:1fr;}
+  .reads{grid-template-columns:1fr 1fr;}
+  .footer-inner{grid-template-columns:1fr 1fr;}
+}
+@media (max-width:640px){
+  body{font-size:15.5px;}
+  .header-inner{height:auto;padding:12px 16px;flex-direction:column;align-items:flex-start;gap:10px;}
+  .nav{gap:2px;}
+  .nav a{padding:6px 10px;font-size:14px;}
+  h1{font-size:27px;}
+  .section{padding:40px 16px 6px;}
+  .section-head h2{font-size:22px;}
+  .hero-inner{padding:32px 16px 30px;}
+  .hero-side,.judge,.prep-main,.prep-side{padding:22px;}
+  .reads{grid-template-columns:1fr;}
+  .footer-inner{grid-template-columns:1fr;padding:32px 16px 22px;}
+  thead th,tbody td{padding:11px 13px;font-size:14px;}
+  .table-wrap{overflow-x:auto;}
+  table{min-width:560px;}
+}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <div class="brand">
+      <span class="brand-mark">辞</span>
+      <span>裸辞决策参考</span>
+    </div>
+    <nav class="nav">
+      <a href="#reasons">七条理由</a>
+      <a href="#judge">判断标准</a>
+      <a href="#prep">准备清单</a>
+      <a href="#compare">风险对照</a>
+      <a href="#faq">常见问题</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- 首屏 -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div>
+        <span class="hero-tag">离职决策 · 理性评估</span>
+        <h1>裸辞的7条理由：<em>哪些值得走，哪些只是情绪</em></h1>
+        <p class="hero-lead">
+          裸辞指的是在没有落实下一份工作的情况下主动离职。它既可能是一次清醒的止损，也可能是一时冲动的代价。
+          这篇文章把常被提起的七类离职动机逐一拆开，说明每一条在什么条件下成立、需要付出什么代价，
+          以及在真正递出辞呈之前应该先想清楚哪些问题。
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#reasons">查看七条理由</a>
+          <a class="btn btn-ghost" href="#prep">先做离职准备</a>
+        </div>
+      </div>
+      <aside class="hero-side">
+        <h2>先问自己三件事</h2>
+        <ul class="quick-list">
+          <li><span class="num">1</span><span>离开的动机，是长期积累的问题，还是最近一次冲突带来的情绪？</span></li>
+          <li><span class="num">2</span><span>如果三个月内找不到合适的工作，生活能否维持？</span></li>
+          <li><span class="num">3</span><span>换个环境，同样的问题是否还会出现？</span></li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+  <!-- 七条理由 -->
+  <section class="section" id="reasons">
+    <div class="section-head">
+      <div class="eyebrow">Reasons</div>
+      <h2>常被提到的七条裸辞理由</h2>
+      <p>下面每一条都可能在现实中成立，但成立的前提各不相同。请把它当作自我核对的清单，而不是给自己找借口的题库。</p>
+    </div>
+    <div class="reason-grid">
+
+      <article class="reason-card">
+        <div class="reason-top">
+          <div class="reason-index">1</div>
+          <h3>身心健康已经明显受损</h3>
+        </div>
+        <p>长期失眠、持续焦虑、体检指标异常、情绪失控，这类信号往往不是靠休假几天就能恢复的。当工作强度与个人承受能力长期失衡，健康是最不该被拿来交换的东西。</p>
+        <div class="reason-meta">
+          <span class="chip good">相对成立</span>
+          <span class="chip">需就医或专业评估佐证</span>
+        </div>
+      </article>
+
+      <article class="reason-card">
+        <div class="reason-top">
+          <div class="reason-index">2</div>
+          <h3>价值观与工作内容严重冲突</h3>
+        </div>
+        <p>被要求做违背职业操守或明显损害他人利益的事，或者长期在欺骗性的业务中工作，这种消耗会持续侵蚀自我认同。此类冲突通常难以通过内部沟通解决。</p>
+        <div class="reason-meta">
+          <span class="chip good">相对成立</span>
+          <span class="chip">注意保留必要证据</span>
+        </div>
+      </article>
+
+      <article class="reason-card">
+        <div class="reason-top">
+          <div class="reason-index">3</div>
+          <h3>成长停滞，重复劳动看不到积累</h3>
+        </div>
+        <p>如果两三年里技能、视野、作品都没有实质变化，而岗位本身也没有上升通道，继续待下去的机会成本会越来越高。关键是要能说清楚：你想积累的到底是什么。</p>
+        <div class="reason-meta">
+          <span class="chip">视情况而定</span>
+          <span class="chip risk">需先明确方向</span>
+        </div>
+      </article>
+
+      <article class="reason-card">
+        <div class="reason-top">
+          <div class="reason-index">4</div>
+          <h3>与直属上级或团队长期无法协作</h3>
+        </div>
+        <p>沟通方式、管理风格、信任关系长期错位，会让人每天消耗大量精力在情绪防御上。但要区分是个人磨合问题，还是系统性的管理问题——前者换团队可能就消失，后者换公司也未必躲得开。</p>
+        <div class="reason-meta">
+          <span class="chip">视情况而定</span>
+          <span class="chip risk">先尝试内部调整</span>
+        </div>
+      </article>
+
+      <article class="reason-card">
+        <div class="reason-top">
+          <div class="reason-index">5</div>
+          <h3>薪酬与付出长期明显不匹配</h3>
+        </div>
+        <p>薪资低于同岗位市场水平、加班没有对应回报、承诺的调整长期不兑现，都属于这一类。建议先做市场薪资调研和内部沟通，再判断是谈判空间问题还是公司结构问题。</p>
+        <div class="reason-meta">
+          <span class="chip">视情况而定</span>
+          <span class="chip">先谈再走更稳妥</span>
+        </div>
+      </article>
+
+      <article class="reason-card">
+        <div class="reason-top">
+          <div class="reason-index">6</div>
+          <h3>需要一段完整时间处理个人事务</h3>
+        </div>
+        <p>照顾家人、治疗疾病、处理重要家庭安排、准备考试或转行学习，这些确实需要连续的时间块。这类理由的关键是：时间边界要清楚，否则"休息一段"很容易变成无限期拖延。</p>
+        <div class="reason-meta">
+          <span class="chip good">相对成立</span>
+          <span class="chip">建议设定明确期限</span>
+        </div>
+      </article>
+
+      <article class="reason-card">
+        <div class="reason-top">
+          <div class="reason-index">7</div>
+          <h3>想彻底换赛道，需要重新开始</h3>
+        </div>
+        <p>转行往往需要学习、项目实践和求职准备的时间，边工作边转型确实很难。但"想转行"本身不等于"必须裸辞"，可以先验证新方向是否真的适合自己，再决定是否切断收入。</p>
+        <div class="reason-meta">
+          <span class="chip">视情况而定</span>
+          <span class="chip risk">先做小规模验证</span>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- 判断标准 -->
+  <section class="section" id="judge">
+    <div class="section-head">
+      <div class="eyebrow">How to judge</div>
+      <h2>怎么判断一条理由够不够硬</h2>
+      <p>同一个理由，对不同的人结论可能完全相反。可以用下面三个维度快速自检。</p>
+    </div>
+    <div class="judge">
+      <div class="judge-grid">
+        <div class="judge-item">
+          <h3><span class="dot dot-green"></span>可逆性</h3>
+          <p>这件事如果不处理，半年后会不会变得更糟？如果答案是会，说明问题在持续恶化，拖延的成本在上升。</p>
+          <ul>
+            <li>健康问题：通常不可逆，越早处理越好</li>
+            <li>薪资问题：可通过谈判或跳槽解决</li>
+            <li>情绪冲突：多数情况下可逆</li>
+          </ul>
+        </div>
+        <div class="judge-item">
+          <h3><span class="dot dot-amber"></span>外部性</h3>
+          <p>问题出在这家公司，还是出在这个行业、这个岗位类型？如果换个地方还会遇到，裸辞解决不了根本问题。</p>
+          <ul>
+            <li>公司管理混乱：换公司可能改善</li>
+            <li>行业普遍加班：换公司未必改善</li>
+            <li>岗位性质限制：需要考虑转岗或转行</li>
+          </ul>
+        </div>
+        <div class="judge-item">
+          <h3><span class="dot dot-red"></span>承受力</h3>
+          <p>没有收入的情况下，你能撑多久？这段时间里，经济压力和求职焦虑会不会反过来影响判断？</p>
+          <ul>
+            <li>有无应急储蓄，能覆盖几个月开支</li>
+            <li>是否有社保、医保的衔接安排</li>
+            <li>家人是否理解，能否提供支持</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 准备清单 -->
+  <section class="section" id="prep">
+    <div class="section-head">
+      <div class="eyebrow">Preparation</div>
+      <h2>决定裸辞前，先把这几步走完</h2>
+      <p>裸辞不是不能做，而是不该在没准备的情况下做。以下步骤按优先级排列。</p>
+    </div>
+    <div class="prep">
+      <div class="prep-main">
+        <ol class="step-list">
+          <li>
+            <h3>算清楚能撑多久</h3>
+            <p>把房租、房贷、日常开销、社保自缴、保险费用加总，算出每月刚性支出，再对照现有存款，得出可支撑的月数。一般建议至少留出三到六个月，转行或行业不景气时应更长。</p>
+          </li>
+          <li>
+            <h3>确认社保与医保的衔接方案</h3>
+            <p>离职后社保断缴可能影响医保报销、购房资格、落户积分等。提前了解当地以灵活就业身份参保的流程和费用，避免出现空窗。</p>
+          </li>
+          <li>
+            <h3>把离职原因写成一句客观的话</h3>
+            <p>面试时几乎一定会被问到离职原因。提前把它整理成不抱怨前公司、不暴露情绪、指向未来方向的表述，比临时解释要从容得多。</p>
+          </li>
+          <li>
+            <h3>更新简历与作品集</h3>
+            <p>在职时整理材料往往比离职后更完整，因为项目细节还记得清楚。趁交接期把成果、数据、案例归档，会节省大量后续时间。</p>
+          </li>
+          <li>
+            <h3>设定明确的时间节点</h3>
+            <p>给自己定一个"开始集中投递"的日期和一个"重新评估"的日期。比如休息两周后开始找工作，两个月后如果仍无进展就调整方向或接受过渡性工作。</p>
+          </li>
+          <li>
+            <h3>和关键的人沟通</h3>
+            <p>如果与家人共同承担开支，提前沟通能减少后续压力。独自承担的人也应让一两位可信的朋友知道你的计划，避免长期孤立。</p>
+          </li>
+        </ol>
+      </div>
+      <aside class="prep-side">
+        <h3>离职前检查清单</h3>
+        <ul class="check-list">
+          <li>确认最后工作日与工资、年假结算方式</li>
+          <li>确认离职证明的开具时间</li>
+          <li>备份个人文件，不带走公司资料</li>
+          <li>整理可公开的作品与项目记录</li>
+          <li>确认竞业限制条款是否适用</li>
+          <li>保存必要的劳动合同与工资凭证</li>
+          <li>确认社保减员时间与参保衔接</li>
+          <li>更新求职平台的在职状态</li>
+        </ul>
+        <div class="note-box">
+          提醒：如果存在拖欠工资、违法解除等争议，建议先咨询当地劳动保障部门或专业人士，再决定离职方式与时间点。
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- 风险对照 -->
+  <section class="section" id="compare">
+    <div class="section-head">
+      <div class="eyebrow">Comparison</div>
+      <h2>裸辞与在职求职的差异对照</h2>
+      <p>两种方式各有利弊，关键看你的处境更接近哪一栏。</p>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>比较维度</th>
+            <th>裸辞</th>
+            <th>在职求职</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>时间与精力</strong></td>
+            <td>可集中准备面试、学习与转型</td>
+            <td>需要挤时间，节奏容易被打断</td>
+          </tr>
+          <tr>
+            <td><strong>经济压力</strong></td>
+            <td>无收入，支出持续，压力随时间累积</td>
+            <td>收入稳定，谈判时更有底气</td>
+          </tr>
+          <tr>
+            <td><strong>求职心态</strong></td>
+            <td>容易因焦虑而降低标准，仓促接受不合适的机会</td>
+            <td>相对从容，可以耐心筛选</td>
+          </tr>
+          <tr>
+            <td><strong>面试官视角</strong></td>
+            <td>空窗期需要合理解释，部分岗位会追问</td>
+            <td>通常不需要额外说明</td>
+          </tr>
+          <tr>
+            <td><strong>适合的情形</strong></td>
+            <td>健康受损、需要完整时间处理事务、准备转行</td>
+            <td>只是想换环境、涨薪或换团队</td>
+          </tr>
+          <tr>
+            <td><strong>主要风险</strong></td>
+            <td>空窗期拉长、议价能力下降</td>
+            <td>精力分散、可能错过合适机会</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section" id="faq">
+    <div class="section-head">
+      <div class="eyebrow">FAQ</div>
+      <h2>常见问题</h2>
+    </div>
+    <div class="faq">
+      <div class="faq-item">
+        <h3>裸辞后空窗期多久算正常？</h3>
+        <p>没有统一标准，取决于行业、岗位层级和求职范围。技术、销售等流动性强的岗位通常较快，管理岗或需要跨城市、跨行业的情况会更久。重要的是你能清楚说明这段时间做了什么，而不是空窗本身。</p>
+      </div>
+      <div class="faq-item">
+        <h3>面试时被问离职原因，怎么说比较好？</h3>
+        <p>原则是：不指责前公司、不暴露情绪、指向未来。可以聚焦在发展方向、岗位匹配度、希望积累的能力上。如果确实是公司经营问题或组织调整，如实说明也完全可以。</p>
+      </div>
+      <div class="faq-item">
+        <h3>存款不多还能裸辞吗？</h3>
+        <p>存款少意味着容错空间小。这种情况下更建议先在职寻找机会，或者先找到过渡性收入来源，比如兼职、项目制合作，再考虑完全脱离。健康或家庭原因另当别论，但也要提前规划支出。</p>
+      </div>
+      <div class="faq-item">
+        <h3>怎么区分"真的该走"和"一时冲动"？</h3>
+        <p>一个简单的办法是：把现在的想法写下来，等两周再看。如果理由依然成立、并且能说出具体的改善目标，那更可能是理性判断；如果两周后情绪已经平复、想法也变了，那更接近情绪反应。</p>
+      </div>
+      <div class="faq-item">
+        <h3>裸辞期间应该怎么安排时间？</h3>
+        <p>建议保持基本作息，把时间分成三块：求职准备、能力提升、休息恢复。完全放任容易打乱节奏，过度紧绷又会加重焦虑。设定每周可完成的小目标，比制定宏大计划更有效。</p>
+      </div>
+      <div class="faq-item">
+        <h3>离职后社保断了会有什么影响？</h3>
+        <p>医保断缴后通常次月起无法报销，连续缴费年限也可能重新计算；部分城市的购房、落户、子女入学资格与连续缴纳记录挂钩。具体规则各地不同，建议离职前咨询当地社保经办机构。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 相关阅读 -->
+  <section class="section">
+    <div class="section-head">
+      <div class="eyebrow">More</div>
+      <h2>延伸阅读方向</h2>
+    </div>
+    <div class="reads">
+      <article class="read-card">
+        <div class="k">求职准备</div>
+        <h3>离职原因的标准表达</h3>
+        <p>如何把真实原因转化为面试中站得住脚、不引发追问的表述，以及哪些说法容易踩雷。</p>
+      </article>
+      <article class="read-card">
+        <div class="k">财务规划</div>
+        <h3>应急储蓄要留多少</h3>
+        <p>按刚性支出、行业求职周期和家庭责任三个变量，估算适合自己的安全月数。</p>
+      </article>
+      <article class="read-card">
+        <div class="k">职业发展</div>
+        <h3>转行前的小规模验证</h3>
+        <p>在不辞职的前提下，用项目、兼职或课程测试新方向是否真的适合自己。</p>
+      </article>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <div class="footer-brand">
+        <span class="brand-mark">辞</span>
+        <span>裸辞决策参考</span>
+      </div>
+      <p>围绕离职动机、风险评估与求职准备，提供可对照、可执行的参考信息，帮助你在做职业决定时少一些情绪，多一些依据。</p>
+    </div>
+    <div class="footer-col">
+      <h4>内容导航</h4>
+      <ul>
+        <li><a href="#reasons">七条裸辞理由</a></li>
+        <li><a href="#judge">判断标准</a></li>
+        <li><a href="#prep">离职准备清单</a></li>
+        <li><a href="#compare">风险对照</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>相关主题</h4>
+      <ul>
+        <li><a href="#faq">常见问题</a></li>
+        <li><a href="#prep">社保衔接</a></li>
+        <li><a href="#judge">职业规划</a></li>
+        <li><a href="#compare">在职求职</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    本文内容为一般性参考，不构成法律、财务或医疗建议。涉及具体权益问题，请咨询相应专业机构。
+  </div>
+</footer>
+
+<script>
+(function(){
+  var links = document.querySelectorAll('.nav a[href^="#"]');
+  for (var i = 0; i < links.length; i++) {
+    links[i].addEventListener('click', function(e){
+      var id = this.getAttribute('href').slice(1);
+      var target = document.getElementById(id);
+      if (target) {
+        e.preventDefault();
+        var top = target.getBoundingClientRect().top + window.pageYOffset - 76;
+        window.scrollTo({ top: top, behavior: 'smooth' });
+      }
+    });
+  }
+})();
+</script>
+
+</body>
+        </html>
